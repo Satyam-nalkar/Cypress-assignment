@@ -60,12 +60,13 @@ it('Autocomplete Selection', () => {
 
   // Scroll to Basic table example
   cy.contains('Basic table').scrollIntoView()
-
+  
   // Table rows check (MUI basic table)
   cy.get('table').first()
     .find('tbody tr')
     .should('have.length.greaterThan', 0)
 })
+
 
 
 })
